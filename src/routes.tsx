@@ -5,6 +5,7 @@ import Rooms from './pages/Rooms'
 import RoomDetail, { getStaticPaths as roomPaths } from './pages/RoomDetail'
 import Programme from './pages/Programme'
 import Speakers from './pages/Speakers'
+import Register from './pages/Register'
 import NotFound from './pages/NotFound'
 
 export const routes: RouteRecord[] = [
@@ -21,6 +22,7 @@ export const routes: RouteRecord[] = [
       },
       { path: 'programme', element: <Programme /> },
       { path: 'speakers', element: <Speakers /> },
+      { path: 'register', element: <Register /> },
       { path: '*', element: <NotFound /> },
     ],
   },

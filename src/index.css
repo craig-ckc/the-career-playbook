@@ -2,22 +2,25 @@
 
 @theme {
   /* Backgrounds */
-  --color-ground: #0F0E0D;
-  --color-surface: #1C1917;
-  --color-surface-2: #252320;
+  --color-ground: #101213;
+  --color-surface: #1A1F20;
+  --color-surface-2: #263033;
 
   /* Light */
-  --color-cream: #F4EDE0;
-  --color-cream-surface: #EAE0CE;
+  --color-cream: #FFF7E8;
+  --color-cream-surface: #F3E7D2;
 
   /* Accents */
-  --color-gold: #E8B84B;
-  --color-coral: #CC5240;
+  --color-gold: #F7C928;
+  --color-coral: #F06B4F;
+  --color-teal: #17A99A;
+  --color-sky: #73B7FF;
+  --color-berry: #D9578A;
 
   /* Text */
-  --color-charcoal: #1C1917;
-  --color-muted: #8C867E;
-  --color-muted-dark: #6B6358;
+  --color-charcoal: #171B1C;
+  --color-muted: #A8B0AD;
+  --color-muted-dark: #59635F;
 
   /* Fonts */
   --font-display: 'Barlow Condensed', sans-serif;
@@ -32,12 +35,44 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-ground);
+  background: var(--color-ground);
   color: var(--color-cream);
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+.sunburst-panel {
+  background: var(--color-ground);
+}
+
+/* ── Brand image treatment ─────────────────────
+   Turns generic stock into a cohesive editorial look: desaturated base
+   with a warm charcoal→gold duotone wash layered over it. */
+.brand-photo {
+  /* position: relative; */
+  overflow: hidden;
+  isolation: isolate;
+}
+.brand-photo > img {
+  filter: grayscale(1) contrast(1.06) brightness(0.96);
+}
+.brand-photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(150deg, var(--color-charcoal) 0%, transparent 55%),
+              linear-gradient(330deg, rgba(247, 201, 40, 0.22) 0%, transparent 60%);
+  mix-blend-mode: multiply;
+  pointer-events: none;
 }
 
 /* ── Animations ────────────────────────────── */

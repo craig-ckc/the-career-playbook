@@ -2,4 +2,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.playwright-mcp
 .DS_Store
+
+# Playwright / test artifacts
+.playwright-cli
+output

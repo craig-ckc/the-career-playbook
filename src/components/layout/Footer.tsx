@@ -17,7 +17,7 @@ export default function Footer() {
               The Career<br />
               <span className="text-gold">Playbook</span>
             </p>
-            <p className="font-mono text-[10px] uppercase tracking-widest text-muted mt-3">
+            <p className="font-mono text-xs uppercase tracking-widest text-muted mt-3">
               The Collective Master Class Sessions
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-cream/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <p className="font-mono text-[10px] uppercase tracking-widest text-muted">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted">
             27 June 2026 · Grace Place Church · 8:00 AM – 1:00 PM · R100 pp
           </p>
           <p className="font-body text-xs text-muted/60">

@@ -6,7 +6,6 @@ import Section from '../components/layout/Section'
 import Container from '../components/layout/Container'
 import SectionHeading from '../components/ui/SectionHeading'
 import Button from '../components/ui/Button'
-import Badge from '../components/ui/Badge'
 import RoomCard from '../components/features/RoomCard'
 import JourneyArc from '../components/features/JourneyArc'
 import FeatureCard from '../components/features/FeatureCard'
@@ -16,18 +15,21 @@ import event from '../content/event.json'
 import rooms from '../content/rooms.json'
 import journey from '../content/journey.json'
 import schedule from '../content/schedule.json'
+import heroImage from '../assets/career-workshop-hero.jpg'
+import networkingImage from '../assets/career-networking.jpg'
+import collaborationImage from '../assets/career-collaboration.jpg'
 import type { JourneyStep, ScheduleEntry } from '../types/content'
 
 const typedJourney = journey as JourneyStep[]
 const typedSchedule = schedule as ScheduleEntry[]
 
 const features = [
-  { icon: '🎤', title: 'Industry Speakers', description: 'Hear from credible professionals across diverse industries and sectors.' },
-  { icon: '🧠', title: 'Interactive Workshops', description: 'Six breakaway rooms, each led by a specialist — choose the sessions that matter most to you.' },
-  { icon: '💬', title: 'Career Panel', description: 'A 75-minute moderated discussion on the career moves that matter, with a live Q&A.' },
-  { icon: '🤝', title: 'Networking', description: 'Connect with 25 industry mentors, peers, speakers, and fellow young professionals.' },
-  { icon: '🧭', title: 'Practical Advice', description: 'Leave with actionable strategies you can apply to your career immediately.' },
-]
+  { icon: 'speakers', title: 'Industry Speakers', description: 'Hear from credible professionals across diverse industries and sectors.' },
+  { icon: 'workshops', title: 'Interactive Workshops', description: 'Six breakaway rooms, each led by a specialist — choose the sessions that matter most to you.' },
+  { icon: 'panel', title: 'Career Panel', description: 'A 75-minute moderated discussion on the career moves that matter, with a live Q&A.' },
+  { icon: 'networking', title: 'Networking', description: 'Connect with 25 industry mentors, peers, speakers, and fellow young professionals.' },
+  { icon: 'advice', title: 'Practical Advice', description: 'Leave with actionable strategies you can apply to your career immediately.' },
+] as const
 
 function FadeSection({ children, className }: { children: React.ReactNode; className?: string }) {
   const { ref, isVisible } = useScrollAnimation()
@@ -51,99 +53,83 @@ export default function Home() {
 
       {/* ── HERO ─────────────────────────────────────── */}
       <section className="relative min-h-screen bg-ground flex flex-col overflow-hidden">
-        {/* Decorative gold arc */}
-        <div
-          aria-hidden="true"
-          className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full border border-gold/8 pointer-events-none"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full border border-gold/5 pointer-events-none"
-        />
+        <div className="brand-photo absolute inset-0" aria-hidden="true">
+          <img
+            src={heroImage}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-ground via-ground/85 to-ground/35" aria-hidden="true" />
+        <div className="absolute inset-0 bg-gradient-to-t from-ground/80 via-transparent to-ground/30" aria-hidden="true" />
 
-        <div className="flex-1 flex flex-col justify-center px-6 lg:px-12 pt-28 pb-8 max-w-7xl mx-auto w-full">
-          <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-gold/60 mb-6 block animate-fade-in">
-            {event.organisedBy}
-          </span>
+        <div className="flex-1 flex items-center px-6 lg:px-12 pt-28 pb-16 max-w-7xl mx-auto w-full relative">
+          <div className="max-w-4xl">
+            <span className="font-mono text-xs uppercase tracking-[0.22em] text-gold mb-6 block animate-fade-in">
+              {event.organisedBy}
+            </span>
 
-          <h1
-            className="font-display uppercase text-cream leading-none tracking-tight animate-fade-up"
-            style={{ fontSize: 'clamp(64px, 13vw, 144px)' }}
-          >
-            The Career<br />
-            <span className="text-gold">Playbook</span>
-          </h1>
+            <h1
+              className="font-display uppercase text-cream leading-[0.92] tracking-tight animate-fade-up"
+              style={{ fontSize: 'clamp(58px, 10vw, 132px)' }}
+            >
+              The Career<br />
+              <span className="text-gold">Playbook</span>
+            </h1>
 
-          <div className="flex flex-wrap gap-2 mt-8 animate-fade-up" style={{ animationDelay: '100ms' }}>
-            <Badge label={event.dateShort} variant="outline" />
-            <Badge label={event.venue} variant="outline" />
-            <Badge label={event.priceDisplay} variant="gold" />
-          </div>
+            <p className="font-body text-base lg:text-lg text-cream/85 mt-6 max-w-xl leading-relaxed animate-fade-up" style={{ animationDelay: '120ms' }}>
+              A practical career masterclass for students, graduates, young professionals, and emerging leaders.
+            </p>
 
-          <p
-            className="font-display uppercase text-cream/60 mt-6 tracking-widest animate-fade-up"
-            style={{ fontSize: 'clamp(13px, 2vw, 18px)', animationDelay: '180ms' }}
-          >
-            {event.tagline}
-          </p>
-
-          <div className="flex flex-wrap gap-4 mt-8 animate-fade-up" style={{ animationDelay: '250ms' }}>
-            <Button variant="primary" size="lg" href="#register">
-              Register Now →
-            </Button>
-            <Button variant="outline" size="lg" href="/rooms">
-              Explore Rooms
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 mt-9 animate-fade-up w-full sm:w-auto" style={{ animationDelay: '220ms' }}>
+              <Button variant="primary" size="lg" href="/register" className="w-full sm:w-auto justify-center">
+                Register Now →
+              </Button>
+              <Button variant="outline" size="lg" href="/rooms" className="w-full sm:w-auto justify-center">
+                Explore Rooms
+              </Button>
+            </div>
           </div>
         </div>
 
-        {/* Ticker strip */}
-        <div className="border-t border-cream/8 py-3 overflow-hidden bg-surface/50">
-          <div className="animate-ticker flex whitespace-nowrap">
-            {Array.from({ length: 6 }).map((_, i) => (
-              <span key={i} className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted pr-16">
-                Faith · Purpose · Excellence · Impact · 27 June 2026 · Grace Place Church · R100 pp ·&nbsp;
-              </span>
-            ))}
-          </div>
-        </div>
       </section>
 
       {/* ── ABOUT ────────────────────────────────────── */}
       <Section variant="cream" py="lg">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          <div className="grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-20 items-center">
+            <FadeSection>
+              <div className="brand-photo w-full aspect-[4/5] rounded-md border border-charcoal/10">
+                <img
+                  src={networkingImage}
+                  alt="A confident young professional"
+                  className="h-full w-full object-cover object-[50%_25%]"
+                />
+              </div>
+            </FadeSection>
             <FadeSection>
               <SectionHeading
                 eyebrow="A Career Masterclass"
                 title="For the driven. The ambitious. The ready."
                 light={false}
               />
-            </FadeSection>
-            <FadeSection>
-              <blockquote className="border-l-2 border-gold pl-6 mb-6">
-                <p className="font-display uppercase text-charcoal text-xl lg:text-2xl leading-snug">
-                  "{event.quote}"
-                </p>
-                <cite className="font-mono text-[10px] uppercase tracking-widest text-muted-dark not-italic block mt-3">
+              <p className="font-body text-base text-charcoal/80 leading-relaxed mt-1">
+                Whether you are starting your career, seeking promotion, or exploring your purpose, this masterclass provides practical guidance and meaningful insights to help you move forward with confidence.
+              </p>
+              <blockquote className="border-l-2 border-gold pl-5 mt-7">
+                <p className="font-display uppercase text-charcoal text-xl leading-snug">"{event.quote}"</p>
+                <cite className="font-mono text-xs uppercase tracking-widest text-muted-dark not-italic block mt-3">
                   — {event.quoteSource}
                 </cite>
               </blockquote>
-              <p className="font-body text-charcoal/80 leading-relaxed">
-                Whether you are starting your career, seeking promotion, or exploring your purpose, this masterclass provides practical guidance and meaningful insights to help you move forward with confidence.
-              </p>
-              <div className="flex flex-wrap gap-2 mt-6">
-                {event.pillars.map(p => (
-                  <Badge key={p} label={p} variant="muted" />
-                ))}
-              </div>
             </FadeSection>
           </div>
         </Container>
       </Section>
 
       {/* ── JOURNEY ARC ──────────────────────────────── */}
-      <Section variant="dark" py="lg" id="journey">
+      <Section variant="dark" py="lg" id="journey" className="relative overflow-hidden">
+        <div aria-hidden="true" className="absolute right-0 top-16 h-48 w-48 rounded-full bg-gold/10 blur-3xl" />
         <Container maxWidth="xl">
           <FadeSection className="mb-10">
             <SectionHeading
@@ -187,13 +173,13 @@ export default function Home() {
             />
             <Link
               to="/rooms"
-              className="font-mono text-[10px] uppercase tracking-widest text-gold/60 hover:text-gold transition-colors shrink-0 whitespace-nowrap"
+              className="font-mono text-xs uppercase tracking-widest text-gold/60 hover:text-gold transition-colors shrink-0 whitespace-nowrap"
             >
               View All Rooms →
             </Link>
           </FadeSection>
           <FadeSection>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {rooms.map(room => (
                 <RoomCard key={room.id} room={room} variant="preview" />
               ))}
@@ -205,6 +191,15 @@ export default function Home() {
       {/* ── PROGRAMME SNAPSHOT ───────────────────────── */}
       <Section variant="cream" py="lg">
         <Container maxWidth="md">
+          <FadeSection className="mb-10">
+            <div className="brand-photo w-full aspect-[16/7] rounded-md border border-charcoal/10">
+              <img
+                src={collaborationImage}
+                alt="People taking notes during a workshop discussion"
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </FadeSection>
           <FadeSection className="mb-8">
             <SectionHeading
               eyebrow="The Programme"
@@ -219,7 +214,7 @@ export default function Home() {
           <FadeSection className="mt-8">
             <Link
               to="/programme"
-              className="font-mono text-[10px] uppercase tracking-widest text-muted-dark hover:text-charcoal transition-colors"
+              className="font-mono text-xs uppercase tracking-widest text-muted-dark hover:text-charcoal transition-colors"
             >
               View Full Programme →
             </Link>

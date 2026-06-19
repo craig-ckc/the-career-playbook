@@ -26,7 +26,7 @@ export default function SectionHeading({
       {eyebrow && (
         <span
           className={cn(
-            'font-mono text-[10px] uppercase tracking-[0.22em] mb-4 block',
+            'font-mono text-xs uppercase tracking-[0.2em] mb-4 block',
             light ? 'text-gold/70' : 'text-muted-dark'
           )}
         >
@@ -35,8 +35,8 @@ export default function SectionHeading({
       )}
       <h2
         className={cn(
-          'font-display uppercase leading-none tracking-tight',
-          'text-[clamp(32px,5vw,56px)]',
+          'font-display uppercase leading-[1.22] tracking-tight text-balance',
+          'text-[clamp(34px,4.8vw,56px)]',
           light ? 'text-cream' : 'text-charcoal'
         )}
       >
@@ -45,7 +45,7 @@ export default function SectionHeading({
       {subtitle && (
         <p
           className={cn(
-            'font-body text-lg mt-4 leading-relaxed',
+            'font-body text-base mt-4 leading-relaxed',
             center ? 'mx-auto max-w-xl' : 'max-w-xl',
             light ? 'text-muted' : 'text-muted-dark'
           )}

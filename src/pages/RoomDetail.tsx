@@ -66,7 +66,7 @@ export default function RoomDetail() {
           <p className="font-display uppercase text-gold text-2xl lg:text-3xl leading-snug mb-6">
             {room.tagline}
           </p>
-          <p className="font-body text-cream/80 leading-relaxed text-lg">
+          <p className="font-body text-cream/80 leading-relaxed text-base">
             {room.description}
           </p>
         </Container>
@@ -75,11 +75,11 @@ export default function RoomDetail() {
       {/* Key Themes */}
       <Section variant="cream" py="lg">
         <Container maxWidth="md">
-          <h2 className="font-display uppercase text-charcoal text-3xl mb-8">Key Discussion Themes</h2>
+          <h2 className="font-display uppercase text-charcoal text-2xl lg:text-3xl mb-8 leading-tight">Key Discussion Themes</h2>
           <ul className="space-y-4">
             {room.themes.map((theme, i) => (
               <li key={theme} className="flex items-start gap-4">
-                <span className="font-mono text-[10px] text-gold shrink-0 mt-1">
+                <span className="font-mono text-xs text-gold shrink-0 mt-1">
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <span className="font-body text-charcoal/80 text-base leading-relaxed">{theme}</span>
@@ -92,7 +92,7 @@ export default function RoomDetail() {
       {/* Takeaway */}
       <Section variant="dark" py="md">
         <Container maxWidth="md">
-          <span className="font-mono text-[10px] uppercase tracking-widest text-gold/60 block mb-4">
+          <span className="font-mono text-xs uppercase tracking-widest text-gold/60 block mb-4">
             Key Takeaway
           </span>
           <blockquote className="border-l-2 border-gold pl-6">
@@ -106,12 +106,12 @@ export default function RoomDetail() {
       {/* Host Bios */}
       <Section variant="cream" py="lg">
         <Container maxWidth="md">
-          <h2 className="font-display uppercase text-charcoal text-3xl mb-8">
+          <h2 className="font-display uppercase text-charcoal text-2xl lg:text-3xl mb-8 leading-tight">
             {hosts.length > 1 ? 'Your Hosts' : 'Your Host'}
           </h2>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
             {hosts.map(host => (
-              <SpeakerCard key={host.id} speaker={host} variant="full" />
+              <SpeakerCard key={host.id} speaker={host} variant="row" />
             ))}
           </div>
         </Container>

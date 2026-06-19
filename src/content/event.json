@@ -13,5 +13,5 @@
   "venue": "Grace Place Church",
   "price": "R100",
   "priceDisplay": "R100 pp",
-  "registrationUrl": "#register"
+  "registrationUrl": "/register"
 }
