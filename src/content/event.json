@@ -1,0 +1,17 @@
+{
+  "name": "The Career Playbook",
+  "organisedBy": "The Collective Master Class Sessions",
+  "tagline": "Your Path. Your Pace. Your Purpose.",
+  "pillars": ["Faith", "Purpose", "Excellence", "Impact"],
+  "quote": "Whatever you do, work at it with all your heart.",
+  "quoteSource": "Colossians 3:23",
+  "date": "27 June 2026",
+  "dateShort": "27 JUN 2026",
+  "time": "8:00 AM – 1:00 PM",
+  "timeStart": "08:00",
+  "timeEnd": "13:00",
+  "venue": "Grace Place Church",
+  "price": "R100",
+  "priceDisplay": "R100 pp",
+  "registrationUrl": "#register"
+}

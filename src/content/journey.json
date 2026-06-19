@@ -1,0 +1,50 @@
+[
+  {
+    "id": "get-ready",
+    "label": "Get Ready",
+    "track": "Future-Ready",
+    "description": "Understand AI and prepare for the changing world of work.",
+    "roomId": "room-1",
+    "roomSlug": "ai-future"
+  },
+  {
+    "id": "get-in",
+    "label": "Get In",
+    "track": "Opportunity-Ready",
+    "description": "Master your CV, interview technique, and professional presence.",
+    "roomId": "room-2",
+    "roomSlug": "make-interview"
+  },
+  {
+    "id": "get-known",
+    "label": "Get Known",
+    "track": "Visibility-Ready",
+    "description": "Build a brand and reputation that opens doors.",
+    "roomId": "room-3",
+    "roomSlug": "build-brand"
+  },
+  {
+    "id": "stay-well",
+    "label": "Stay Well",
+    "track": "Wellbeing-Ready",
+    "description": "Protect your mental health and emotional wellbeing.",
+    "roomId": "room-4",
+    "roomSlug": "mental-health"
+  },
+  {
+    "id": "move-up",
+    "label": "Move Up",
+    "track": "Growth-Ready",
+    "description": "Get noticed, get promoted, and lead with excellence.",
+    "roomId": "room-5",
+    "roomSlug": "get-promoted"
+  },
+  {
+    "id": "launch",
+    "label": "Launch",
+    "track": "Business-Ready",
+    "description": "Make the leap from employee to entrepreneur.",
+    "roomId": "room-6",
+    "roomSlug": "job-to-business"
+  }
+]

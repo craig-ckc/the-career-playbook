@@ -1,0 +1,127 @@
+[
+  {
+    "id": "room-1",
+    "slug": "ai-future",
+    "number": 1,
+    "track": "Future-Ready",
+    "journeyLabel": "Get Ready",
+    "title": "AI and Your Future at Work",
+    "tagline": "Adapt. Innovate. Stay Relevant.",
+    "subtitle": "AI is no longer the future — it's the present.",
+    "description": "Discover how Artificial Intelligence is transforming the workplace, creating new opportunities, and changing the skills needed to succeed. Learn how to work with AI, not compete against it, and prepare yourself for the careers of tomorrow.",
+    "themes": [
+      "What AI is and what it isn't",
+      "How AI is changing jobs and industries",
+      "Skills that will remain valuable in an AI-driven world",
+      "How to use AI as a tool to enhance productivity and performance",
+      "Preparing for the careers of tomorrow"
+    ],
+    "takeaway": "A practical understanding of AI, greater confidence in navigating workplace change, and actionable strategies to future-proof your career.",
+    "hostIds": ["taurai-nyaruwata"]
+  },
+  {
+    "id": "room-2",
+    "slug": "make-interview",
+    "number": 2,
+    "track": "Opportunity-Ready",
+    "journeyLabel": "Get In",
+    "title": "Make the Interview and Ace the Interview",
+    "tagline": "Be Seen. Be Prepared. Be Hired.",
+    "subtitle": "Your dream job starts long before the interview.",
+    "description": "Learn how to craft a compelling CV, build a professional presence, and confidently showcase your skills when opportunity knocks. From securing the interview to answering tough questions with confidence, this session will help you put your best foot forward.",
+    "themes": [
+      "Building a CV that gets noticed",
+      "Optimising your LinkedIn profile and personal brand",
+      "Common mistakes that prevent candidates from being shortlisted",
+      "Preparing for interviews with confidence",
+      "Answering difficult and behavioural interview questions",
+      "Following up professionally after an interview"
+    ],
+    "takeaway": "Position yourself effectively, increase your chances of being shortlisted, and confidently navigate interviews to leave a lasting impression.",
+    "hostIds": ["fikile-mavangwa"]
+  },
+  {
+    "id": "room-3",
+    "slug": "build-brand",
+    "number": 3,
+    "track": "Visibility-Ready",
+    "journeyLabel": "Get Known",
+    "title": "Build Your Brand and Reputation",
+    "tagline": "Your Brand Opens Doors. Your Reputation Keeps Them Open.",
+    "subtitle": "Your reputation enters the room before you do.",
+    "description": "In today's connected world, your personal brand can influence opportunities, relationships, and career progression. Learn how to build a reputation rooted in authenticity, professionalism, and purpose — and discover how small, consistent actions can have a lasting impact.",
+    "themes": [
+      "What personal branding really means",
+      "Building a reputation based on character and consistency",
+      "The power of your digital footprint",
+      "Networking with purpose and authenticity",
+      "Becoming known for your strengths and expertise",
+      "Managing your reputation in a professional environment"
+    ],
+    "takeaway": "Practical strategies to build trust, increase visibility, and create a personal brand that opens doors and supports long-term career growth.",
+    "hostIds": ["raksha-naidoo"]
+  },
+  {
+    "id": "room-4",
+    "slug": "mental-health",
+    "number": 4,
+    "track": "Wellbeing-Ready",
+    "journeyLabel": "Stay Well",
+    "title": "Managing Your Mental Health and Emotional Wellbeing",
+    "tagline": "Protect Your Peace. Strengthen Your Resilience. Thrive with Purpose.",
+    "subtitle": "You cannot pour from an empty cup.",
+    "description": "In a world that constantly demands more, learning how to care for your mental and emotional wellbeing is essential. This session offers practical insights on managing stress, building resilience, and creating healthy habits that help you thrive — not just survive.",
+    "themes": [
+      "Understanding stress, burnout, and emotional fatigue",
+      "Building resilience during challenging seasons",
+      "Managing pressure, setbacks, and uncertainty",
+      "Setting healthy boundaries at work and in life",
+      "Developing habits that support mental wellbeing",
+      "Knowing when and how to seek support"
+    ],
+    "takeaway": "A greater understanding of mental and emotional wellbeing, practical strategies for managing life's pressures, and tools to support long-term personal and professional success.",
+    "hostIds": ["angela-senosha", "gillian-dona"]
+  },
+  {
+    "id": "room-5",
+    "slug": "get-promoted",
+    "number": 5,
+    "track": "Growth-Ready",
+    "journeyLabel": "Move Up",
+    "title": "How to Grow, Get Noticed and Get Promoted",
+    "tagline": "Grow with Intention. Lead with Excellence. Advance with Confidence.",
+    "subtitle": "Don't wait to be discovered — position yourself to be noticed.",
+    "description": "Career growth is about more than working hard. It requires intentional action, continuous learning, and the courage to step into opportunities. Discover how to build credibility, increase your visibility, and demonstrate the qualities that organisations look for in future leaders.",
+    "themes": [
+      "Taking ownership of your career growth",
+      "What high performers do differently",
+      "Developing skills beyond your job description",
+      "Building visibility without self-promotion",
+      "The role of mentors, sponsors, and networks",
+      "Positioning yourself for promotion and new opportunities"
+    ],
+    "takeaway": "Practical strategies to increase your impact, expand your professional visibility, and proactively prepare for career advancement.",
+    "hostIds": ["cohen-appanah"]
+  },
+  {
+    "id": "room-6",
+    "slug": "job-to-business",
+    "number": 6,
+    "track": "Business-Ready",
+    "journeyLabel": "Launch",
+    "title": "From Job to Business",
+    "tagline": "From Employee to Entrepreneur. From Idea to Impact.",
+    "subtitle": "What if your next career move isn't a promotion — but a business?",
+    "description": "Whether you dream of launching a side hustle, building a company, or creating multiple income streams, this session will help you understand what it takes to move from employee to entrepreneur. Learn from real experiences, practical insights, and proven strategies to help you start strong and grow with purpose.",
+    "themes": [
+      "The difference between having a job and owning a business",
+      "Developing an entrepreneurial mindset",
+      "Identifying opportunities and solving real problems",
+      "Managing risk and overcoming fear",
+      "Building a business while employed",
+      "Financial planning and business fundamentals"
+    ],
+    "takeaway": "A realistic understanding of entrepreneurship, practical guidance on starting a business, and the confidence to take intentional steps toward turning ideas into action.",
+    "hostIds": ["melissa-chisoko"]
+  }
+]

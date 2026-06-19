@@ -1,0 +1,58 @@
+[
+  {
+    "id": "arrivals",
+    "timeStart": "07:30",
+    "timeEnd": "08:00",
+    "segment": "Arrivals",
+    "details": "Mentors arrive at 07:30 for briefing. Early attendee registration and orientation begins.",
+    "highlight": false
+  },
+  {
+    "id": "networking-coffee",
+    "timeStart": "08:00",
+    "timeEnd": "09:00",
+    "segment": "Networking & Coffee Hour",
+    "details": "25 industry mentors from diverse sectors are present for informal engagement. Mentors and speakers are identifiable by name tags. A display board at the entrance lists each mentor's name and field.",
+    "highlight": true
+  },
+  {
+    "id": "opening",
+    "timeStart": "09:00",
+    "timeEnd": "09:15",
+    "segment": "Welcome & Opening Address",
+    "details": "Welcome by Priscillah Makola (5 mins). Opening address by Cohen Appanah (10 mins), with handover to Raksha Naidoo to introduce the panel. Programme starts exactly at 09:00.",
+    "highlight": false
+  },
+  {
+    "id": "panel",
+    "timeStart": "09:15",
+    "timeEnd": "10:30",
+    "segment": "Panel Discussion",
+    "details": "Accelerate Your Career — The Moves That Matter. Moderator: Raksha Naidoo. Panelists: Zoliswa Tshetshe, Thabile Makgala, Edward Pitsi, Tony Lennox. 45-minute moderated discussion followed by a 30-minute audience Q&A.",
+    "highlight": true
+  },
+  {
+    "id": "rooms-briefing",
+    "timeStart": "10:30",
+    "timeEnd": "10:35",
+    "segment": "Breakaway Rooms Briefing",
+    "details": "Nathan Fletcher introduces the six breakaway rooms and outlines how the sessions work.",
+    "highlight": false
+  },
+  {
+    "id": "lunch-networking",
+    "timeStart": "10:35",
+    "timeEnd": "11:00",
+    "segment": "Networking & Lunch Break",
+    "details": "Lunch and informal interaction — an opportunity to connect with speakers, panelists, mentors, and peers.",
+    "highlight": false
+  },
+  {
+    "id": "breakaway-rooms",
+    "timeStart": "11:00",
+    "timeEnd": "13:00",
+    "segment": "Breakaway Rooms",
+    "details": "Six rooms run simultaneously across four 30-minute rounds. Each room is interactive and includes facilitator input plus Q&A. Attendees may rotate between rooms.",
+    "highlight": true
+  }
+]

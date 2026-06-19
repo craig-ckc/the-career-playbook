@@ -1,0 +1,72 @@
+[
+  {
+    "id": "taurai-nyaruwata",
+    "name": "Taurai Nyaruwata",
+    "title": "Digital Transformation Leader & Technology Researcher",
+    "bioShort": "Helping individuals and businesses navigate the future of work in the age of AI.",
+    "bioFull": "As a technology researcher at a leading consultancy, Taurai explores how people and organisations can thrive in an evolving world of work. With more than 20 years of experience leading digital transformation initiatives, he brings practical insights into how AI is reshaping careers, industries, and opportunities for the next generation.",
+    "roles": ["room-host"],
+    "roomIds": ["room-1"],
+    "initials": "TN"
+  },
+  {
+    "id": "fikile-mavangwa",
+    "name": "Fikile Mavangwa",
+    "title": "Talent Acquisition Specialist & Head of People",
+    "bioShort": "Helping you turn interviews into opportunities.",
+    "bioFull": "With 7 years of recruitment experience across multiple industries and organisational levels, Fikile has reviewed countless CVs and interviewed candidates from internship level through to senior management. She is passionate about helping young professionals understand what employers are looking for and how to approach interviews with confidence and authenticity.",
+    "roles": ["room-host"],
+    "roomIds": ["room-2"],
+    "initials": "FM"
+  },
+  {
+    "id": "raksha-naidoo",
+    "name": "Raksha Naidoo",
+    "title": "CEO, Board Director & Leadership Mentor",
+    "bioShort": "Building influence through authenticity, credibility, and purposeful leadership.",
+    "bioFull": "A transformative executive leader with over 20 years of experience in the mining and manufacturing sectors. As an industry leader, Raksha has built a reputation for purpose-driven leadership, authenticity, and impact. She is passionate about helping others unlock their potential and believes that lasting career success is built on trust, credibility, meaningful relationships, and the reputation you cultivate every day.",
+    "roles": ["room-host", "panel-moderator"],
+    "roomIds": ["room-3"],
+    "initials": "RN"
+  },
+  {
+    "id": "angela-senosha",
+    "name": "Angela Senosha",
+    "title": "Founder, CEO & Human Capital Strategist",
+    "bioShort": "Driving workplace wellbeing and sustainable growth through people-centred leadership.",
+    "bioFull": "Angela is a multi-award-winning HR professional and Founder & CEO of Positive Switch. Recognised among Africa's Top 40 Under 40, she helps organisations unlock performance and sustainable growth through innovative, future-focused people strategies and technology-enabled human capital solutions.",
+    "roles": ["room-host"],
+    "roomIds": ["room-4"],
+    "initials": "AS"
+  },
+  {
+    "id": "gillian-dona",
+    "name": "Gillian Donà",
+    "title": "Industrial Psychologist, Career Coach & Counsellor",
+    "bioShort": "Equipping professionals with practical psychological tools to manage stress, build confidence, and sustain resilient career growth.",
+    "bioFull": "With over 20 years of experience, Gillian is passionate about helping professionals thrive in both their careers and personal lives. She equips individuals with practical psychological tools to manage stress, build confidence, strengthen resilience, and navigate the challenges of today's workplace.",
+    "roles": ["room-host"],
+    "roomIds": ["room-4"],
+    "initials": "GD"
+  },
+  {
+    "id": "cohen-appanah",
+    "name": "Cohen Appanah",
+    "title": "Award-Winning Leader & High-Performance Mentor",
+    "bioShort": "Helping professionals stand out, accelerate their growth, and position themselves for success.",
+    "bioFull": "Passionate about helping others unlock their potential, Cohen is an award-winning leader and global management professional with a proven track record of driving performance and developing talent. He equips ambitious individuals with practical strategies to build visibility, cultivate meaningful professional relationships, find mentors and sponsors, and position themselves for career growth and leadership opportunities.",
+    "roles": ["opening-speaker", "room-host"],
+    "roomIds": ["room-5"],
+    "initials": "CA"
+  },
+  {
+    "id": "melissa-chisoko",
+    "name": "Melissa Chisoko",
+    "title": "Entrepreneur, Founder & Business Mentor",
+    "bioShort": "Helping aspiring entrepreneurs turn ideas into thriving businesses with purpose and confidence.",
+    "bioFull": "Melissa is a qualified Financial Accountant, multi-award-winning entrepreneur, and former corporate professional who successfully transitioned from a 9–5 career into full-time entrepreneurship. As the founder of Mazh Babies and Classi Beauty Studio, she has built purpose-driven businesses that have earned recognition in British Vogue and Glamour UK, with Mazh Babies stocked in Chelino stores nationwide.",
+    "roles": ["room-host"],
+    "roomIds": ["room-6"],
+    "initials": "MC"
+  }
+]
