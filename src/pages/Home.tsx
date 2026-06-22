@@ -15,9 +15,9 @@ import event from '../content/event.json'
 import rooms from '../content/rooms.json'
 import journey from '../content/journey.json'
 import schedule from '../content/schedule.json'
-import heroImage from '../assets/career-workshop-hero.jpg'
-import networkingImage from '../assets/career-networking.jpg'
-import collaborationImage from '../assets/career-collaboration.jpg'
+import heroImage from '../assets/career-workshop-hero.avif'
+import networkingImage from '../assets/career-networking.avif'
+import collaborationImage from '../assets/career-collaboration.avif'
 import type { JourneyStep, ScheduleEntry } from '../types/content'
 
 const typedJourney = journey as JourneyStep[]

@@ -8,7 +8,7 @@ import RegisterCTA from '../components/features/RegisterCTA'
 import rooms from '../content/rooms.json'
 import journey from '../content/journey.json'
 import type { JourneyStep } from '../types/content'
-import roomsHero from '../assets/career-mic.jpg'
+import roomsHero from '../assets/career-mic.avif'
 
 const typedJourney = journey as JourneyStep[]
 
