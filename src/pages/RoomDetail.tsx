@@ -7,8 +7,10 @@ import Badge from '../components/ui/Badge'
 import SpeakerCard from '../components/features/SpeakerCard'
 import RoomCard from '../components/features/RoomCard'
 import RegisterCTA from '../components/features/RegisterCTA'
+import RoomVideo from '../components/features/RoomVideo'
 import rooms from '../content/rooms.json'
 import speakers from '../content/speakers.json'
+import { roomVideos, roomVideoPosters } from '../assets/roomVideos'
 import type { Speaker } from '../types/content'
 
 const typedSpeakers = speakers as Speaker[]
@@ -33,7 +35,10 @@ export default function RoomDetail() {
   }
 
   const hosts = typedSpeakers.filter(s => room.hostIds.includes(s.id))
+  const hostNames = hosts.map(h => h.name).join(' & ')
   const otherRooms = rooms.filter(r => r.id !== room.id).slice(0, 3)
+  const video = roomVideos[room.slug]
+  const videoPoster = roomVideoPosters[room.slug]
 
   return (
     <>
@@ -116,6 +121,37 @@ export default function RoomDetail() {
           </div>
         </Container>
       </Section>
+
+      {/* Promotional video — two-column write-up beside the clip. Only renders
+          when a promo video is wired up for this room. */}
+      {video && (
+        <Section variant="dark" py="lg">
+          <Container maxWidth="lg">
+            <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
+              {/* Write-up */}
+              <div className="max-w-md">
+                <span className="font-mono text-xs uppercase tracking-widest text-gold/60 block mb-4">
+                  Watch
+                </span>
+                <h2 className="font-display uppercase text-cream text-2xl lg:text-4xl leading-[1.05] mb-5">
+                  A Look Inside This Room
+                </h2>
+                <p className="font-display uppercase text-gold text-lg lg:text-xl leading-snug mb-4">
+                  {room.tagline}
+                </p>
+                <p className="font-body text-cream/75 leading-relaxed text-base">
+                  {`Press play for a quick look inside this room — the format, the energy, and what you'll walk away with. Hosted by ${hostNames}.`}
+                </p>
+              </div>
+
+              {/* Promo video */}
+              <div>
+                <RoomVideo src={video} poster={videoPoster} title={room.title} />
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* Other Rooms */}
       <Section variant="dark" py="lg">
