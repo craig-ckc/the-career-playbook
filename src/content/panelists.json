@@ -1,6 +1,6 @@
 [
-  { "id": "zoliswa-tshetshe", "name": "Zoliswa Tshetshe",  "title": "Panelist", "initials": "ZT" },
-  { "id": "thabile-makgala",  "name": "Thabile Makgala",   "title": "Panelist", "initials": "TM" },
-  { "id": "edward-pitsi",     "name": "Edward Pitsi",      "title": "Panelist", "initials": "EP" },
-  { "id": "tony-lennox",      "name": "Tony Lennox",       "title": "Panelist", "initials": "TL" }
+  { "id": "zoliswa-tshetshe", "name": "Zoliswa Tshetshe", "title": "Executive Chairman, M&D Construction", "initials": "ZT" },
+  { "id": "thabile-makgala",  "name": "Thabile Makgala",  "title": "Executive Vice President, Sasol",     "initials": "TM" },
+  { "id": "edward-pitsi",     "name": "Edward Pitsi",      "title": "CEO & Co-Founder, Infinite Partners", "initials": "EP" },
+  { "id": "tony-lennox",      "name": "Tony Lennox",       "title": "Managing Director & CEO, Orion Minerals", "initials": "TL" }
 ]
