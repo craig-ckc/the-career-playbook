@@ -10,7 +10,7 @@ import RoomCard from '../components/features/RoomCard'
 import JourneyArc from '../components/features/JourneyArc'
 import FeatureCard from '../components/features/FeatureCard'
 import ProgrammeTimeline from '../components/features/ProgrammeTimeline'
-import RegisterCTA from '../components/features/RegisterCTA'
+import EventCountdown from '../components/features/EventCountdown'
 import event from '../content/event.json'
 import rooms from '../content/rooms.json'
 import journey from '../content/journey.json'
@@ -45,7 +45,7 @@ export default function Home() {
     <>
       <Head>
         <title>The Career Playbook — 27 June 2026 | Grace Place Church</title>
-        <meta name="description" content="A powerful career masterclass for students, graduates, young professionals, and emerging leaders. Six breakaway rooms, expert panel, networking. 27 June 2026, Grace Place Church. R100." />
+        <meta name="description" content="A powerful career masterclass for students, graduates, young professionals, and emerging leaders. Six breakaway rooms, expert panel, networking. 27 June 2026, Grace Place Church." />
         <meta property="og:title" content="The Career Playbook — Your Path. Your Pace. Your Purpose." />
         <meta property="og:description" content="A career masterclass with six specialist breakaway rooms covering AI, interviews, personal branding, mental health, career growth, and entrepreneurship. 27 June 2026." />
         <meta property="og:type" content="website" />
@@ -82,9 +82,6 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 mt-9 animate-fade-up w-full sm:w-auto" style={{ animationDelay: '220ms' }}>
-              <Button variant="primary" size="lg" href="/register" className="w-full sm:w-auto justify-center">
-                Register Now →
-              </Button>
               <Button variant="outline" size="lg" href="/rooms" className="w-full sm:w-auto justify-center">
                 Explore Rooms
               </Button>
@@ -222,8 +219,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      {/* ── REGISTER CTA ─────────────────────────────── */}
-      <RegisterCTA />
+      <EventCountdown />
     </>
   )
 }

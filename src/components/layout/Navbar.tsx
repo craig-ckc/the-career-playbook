@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { cn } from '../../utils/cn'
-import Button from '../ui/Button'
 
 const navLinks = [
   { label: 'Home',       to: '/' },
@@ -69,12 +68,6 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden md:block">
-            <Button variant="primary" size="sm" href="/register">
-              Register — R100
-            </Button>
-          </div>
-
           {/* Mobile hamburger */}
           <button
             type="button"
@@ -106,11 +99,6 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-          <div className="mt-10">
-            <Button variant="primary" size="lg" href="/register">
-              Register — R100
-            </Button>
-          </div>
           <p className="font-mono text-xs uppercase tracking-widest text-muted mt-auto mb-8">
             27 June 2026 · Grace Place Church
           </p>

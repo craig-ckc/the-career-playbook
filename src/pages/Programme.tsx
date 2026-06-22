@@ -5,7 +5,7 @@ import SectionHeading from '../components/ui/SectionHeading'
 import ProgrammeTimeline from '../components/features/ProgrammeTimeline'
 import PanelDiscussion from '../components/features/PanelDiscussion'
 import RoomCard from '../components/features/RoomCard'
-import RegisterCTA from '../components/features/RegisterCTA'
+import EventCountdown from '../components/features/EventCountdown'
 import schedule from '../content/schedule.json'
 import rooms from '../content/rooms.json'
 import type { ScheduleEntry } from '../types/content'
@@ -63,7 +63,7 @@ export default function Programme() {
         </Container>
       </Section>
 
-      <RegisterCTA />
+      <EventCountdown />
     </>
   )
 }

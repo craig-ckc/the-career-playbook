@@ -62,7 +62,4 @@ export interface EventInfo {
   timeStart: string
   timeEnd: string
   venue: string
-  price: string
-  priceDisplay: string
-  registrationUrl: string
 }

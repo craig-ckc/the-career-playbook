@@ -4,7 +4,7 @@ import Container from '../components/layout/Container'
 import SectionHeading from '../components/ui/SectionHeading'
 import SpeakerCard from '../components/features/SpeakerCard'
 import PanelDiscussion from '../components/features/PanelDiscussion'
-import RegisterCTA from '../components/features/RegisterCTA'
+import EventCountdown from '../components/features/EventCountdown'
 import speakers from '../content/speakers.json'
 import type { Speaker } from '../types/content'
 
@@ -51,7 +51,7 @@ export default function Speakers() {
         </Container>
       </Section>
 
-      <RegisterCTA />
+      <EventCountdown />
     </>
   )
 }

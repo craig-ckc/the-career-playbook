@@ -57,7 +57,7 @@ export default function Countdown() {
         <div key={u.label} className="flex items-start">
           <div className="flex flex-col items-center">
             <span className="flex min-w-[1.6em] items-center justify-center rounded-[5px] border border-charcoal/15 bg-charcoal/[0.05] px-3 py-2 font-display text-charcoal leading-none tabular-nums text-[clamp(34px,6.5vw,58px)]">
-              {u.value === null ? '––' : pad(u.value)}
+              {u.value === null ? '--' : pad(u.value)}
             </span>
             <span className="mt-2 font-mono text-xs uppercase tracking-[0.18em] text-charcoal/55">
               {u.label}

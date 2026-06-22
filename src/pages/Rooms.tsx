@@ -2,15 +2,10 @@ import { Head } from 'vite-react-ssg'
 import Section from '../components/layout/Section'
 import Container from '../components/layout/Container'
 import SectionHeading from '../components/ui/SectionHeading'
-import JourneyArc from '../components/features/JourneyArc'
 import RoomCard from '../components/features/RoomCard'
-import RegisterCTA from '../components/features/RegisterCTA'
+import EventCountdown from '../components/features/EventCountdown'
 import rooms from '../content/rooms.json'
-import journey from '../content/journey.json'
-import type { JourneyStep } from '../types/content'
 import roomsHero from '../assets/career-mic.avif'
-
-const typedJourney = journey as JourneyStep[]
 
 export default function Rooms() {
   return (
@@ -43,13 +38,6 @@ export default function Rooms() {
         </Container>
       </Section>
 
-      {/* Journey arc */}
-      <Section variant="dark" py="none" className="pb-16">
-        <Container maxWidth="xl">
-          <JourneyArc steps={typedJourney} />
-        </Container>
-      </Section>
-
       {/* Rooms grid */}
       <Section variant="surface" py="lg">
         <Container maxWidth="xl">
@@ -61,7 +49,7 @@ export default function Rooms() {
         </Container>
       </Section>
 
-      <RegisterCTA />
+      <EventCountdown />
     </>
   )
 }

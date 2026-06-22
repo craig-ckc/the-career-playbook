@@ -37,7 +37,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-8 border-t border-cream/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <p className="font-mono text-xs uppercase tracking-widest text-muted">
-            27 June 2026 · Grace Place Church · 8:00 AM – 1:00 PM · R100 pp
+            27 June 2026 · Grace Place Church · 8:00 AM – 1:00 PM
           </p>
           <p className="font-body text-xs text-muted/60">
             Faith · Purpose · Excellence · Impact

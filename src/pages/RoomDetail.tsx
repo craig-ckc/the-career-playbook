@@ -6,8 +6,8 @@ import SectionHeading from '../components/ui/SectionHeading'
 import Badge from '../components/ui/Badge'
 import SpeakerCard from '../components/features/SpeakerCard'
 import RoomCard from '../components/features/RoomCard'
-import RegisterCTA from '../components/features/RegisterCTA'
 import RoomVideo from '../components/features/RoomVideo'
+import EventCountdown from '../components/features/EventCountdown'
 import rooms from '../content/rooms.json'
 import speakers from '../content/speakers.json'
 import { roomVideos, roomVideoPosters } from '../assets/roomVideos'
@@ -165,7 +165,7 @@ export default function RoomDetail() {
         </Container>
       </Section>
 
-      <RegisterCTA />
+      <EventCountdown />
     </>
   )
 }
