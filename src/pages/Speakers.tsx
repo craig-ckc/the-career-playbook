@@ -3,13 +3,16 @@ import Section from '../components/layout/Section'
 import Container from '../components/layout/Container'
 import SectionHeading from '../components/ui/SectionHeading'
 import SpeakerCard from '../components/features/SpeakerCard'
+import MentorDirectory from '../components/features/MentorDirectory'
 import PanelDiscussion from '../components/features/PanelDiscussion'
 import EventCountdown from '../components/features/EventCountdown'
 import speakers from '../content/speakers.json'
-import type { Speaker } from '../types/content'
+import mentors from '../content/mentors.json'
+import type { Mentor, Speaker } from '../types/content'
 
 const typedSpeakers = speakers as Speaker[]
 const hosts = typedSpeakers.filter(s => s.roles.includes('room-host'))
+const typedMentors = mentors as Mentor[]
 
 export default function Speakers() {
   return (
@@ -48,6 +51,24 @@ export default function Speakers() {
       <Section variant="dark" py="lg">
         <Container maxWidth="lg">
           <PanelDiscussion />
+        </Container>
+      </Section>
+
+      {/* Mentors */}
+      <Section variant="cream" py="lg" className="border-t border-charcoal/10">
+        <Container maxWidth="xl">
+          <div className="mb-8 max-w-3xl">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-muted-dark mb-4 block">
+              Industry Mentors
+            </span>
+            <h2 className="font-display uppercase text-charcoal text-[clamp(34px,4.8vw,56px)] leading-[1.22] tracking-tight text-balance">
+              Meet the mentors in the room
+            </h2>
+            <p className="font-body text-base text-muted-dark mt-4 leading-relaxed max-w-xl">
+              Professionals across healthcare, business, technology, legal, finance, creative production, and more will be available for practical networking conversations.
+            </p>
+          </div>
+          <MentorDirectory mentors={typedMentors} />
         </Container>
       </Section>
 

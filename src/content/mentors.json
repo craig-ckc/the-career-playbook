@@ -1,0 +1,140 @@
+[
+  {
+    "id": "levashni-govender",
+    "name": "Levashni Govender",
+    "industry": "Healthcare",
+    "occupation": "Paediatric Doctor"
+  },
+  {
+    "id": "travis-cleevely",
+    "name": "Travis Cleevely",
+    "industry": "Video Production / Creative",
+    "occupation": "Video Editor"
+  },
+  {
+    "id": "paul-du-preez",
+    "name": "Paul Du Preez",
+    "industry": "Business Operations",
+    "occupation": "Business Operations Manager"
+  },
+  {
+    "id": "katlego-frank-mangope",
+    "name": "Katlego Frank Mangope",
+    "industry": "Aviation",
+    "occupation": "ATCO/ATSO"
+  },
+  {
+    "id": "christopher-pillay",
+    "name": "Christopher Pillay",
+    "industry": "FMCG",
+    "occupation": "Manager"
+  },
+  {
+    "id": "charlene-ntsime",
+    "name": "Charlene Ntsime",
+    "industry": "HR",
+    "occupation": "Learning and Development Specialist"
+  },
+  {
+    "id": "jade-rooi",
+    "name": "Jade Rooi",
+    "industry": "Retail",
+    "occupation": "Category Buyer"
+  },
+  {
+    "id": "nana-raphahlelo",
+    "name": "Nana Raphahlelo",
+    "industry": "Laboratory Medicine/Medical Science",
+    "occupation": "Senior Medical Scientist in Chemical Pathology"
+  },
+  {
+    "id": "jay-harilall",
+    "name": "Jay Harilall",
+    "industry": "Business",
+    "occupation": "Property Practitioner"
+  },
+  {
+    "id": "quentin-naidoo",
+    "name": "Quentin Naidoo",
+    "industry": "Laboratory Supplies",
+    "occupation": "Director"
+  },
+  {
+    "id": "thabo-raphahlelo",
+    "name": "Thabo Raphahlelo",
+    "industry": "Manufacturing",
+    "occupation": "Acting Head of Manufacturing"
+  },
+  {
+    "id": "samantha-pillay",
+    "name": "Samantha Pillay",
+    "industry": "Business/Manufacturing",
+    "occupation": "National Sales and Product Development Manager"
+  },
+  {
+    "id": "kim-cleevely",
+    "name": "Kim Cleevely",
+    "industry": "Video Production",
+    "occupation": "Video Editor/Entrepreneur"
+  },
+  {
+    "id": "paul-galvao",
+    "name": "Paul Galvão",
+    "industry": "Learning and Development",
+    "occupation": "Business & Life Coach"
+  },
+  {
+    "id": "mathew-perumal",
+    "name": "Mathew Perumal",
+    "industry": "Banking, Property Development",
+    "occupation": "Regional Head- Inland- FNB Residential Developments"
+  },
+  {
+    "id": "serena-kali",
+    "name": "Serena Kali",
+    "industry": "Legal",
+    "occupation": "Attorney & Qualified Mediator"
+  },
+  {
+    "id": "gershuine-rooi",
+    "name": "Gershuine Rooi",
+    "industry": "Human Resources",
+    "occupation": "Human Resources Business Partner"
+  },
+  {
+    "id": "boitumelo-molekane",
+    "name": "Boitumelo Molekane",
+    "industry": "Music",
+    "occupation": "Entrepreneur"
+  },
+  {
+    "id": "priscillah-makola",
+    "name": "Priscillah Makola",
+    "industry": "Finance",
+    "occupation": "Finance Controller"
+  },
+  {
+    "id": "mashilo-masekoa",
+    "name": "Mashilo Masekoa",
+    "industry": "IT",
+    "occupation": "Infrastructure Engineer"
+  },
+  {
+    "id": "phumi-nhlapo",
+    "name": "Phumi Nhlapo",
+    "industry": "Manufacturing and Energy",
+    "occupation": "HR Vice President"
+  },
+  {
+    "id": "thokozani-nhlapo",
+    "name": "Thokozani Nhlapo",
+    "industry": "ICT",
+    "occupation": "Entrepreneur"
+  },
+  {
+    "id": "babongile-molekane",
+    "name": "Babongile Molekane",
+    "industry": "Legal",
+    "occupation": "Attorney and Conveyancer"
+  }
+]

@@ -31,6 +31,13 @@ export interface Panelist {
   initials: string
 }
 
+export interface Mentor {
+  id: string
+  name: string
+  industry: string
+  occupation: string
+}
+
 export interface ScheduleEntry {
   id: string
   timeStart: string
